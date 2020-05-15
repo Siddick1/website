@@ -11,10 +11,10 @@
           </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="images/slideone.jpg" alt="First slide">
+              <img class="d-block w-100" src="slideone.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="images/slidetwo.png" alt="Second slide">
+              <img class="d-block w-100" src="slidetwo.png" alt="Second slide">
             </div>
         </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -49,7 +49,7 @@
                     </h3>                    
                 </div>
                 <div class="col-lg-6">
-                    <img src="images/study1.jpg" class="img-fluid">
+                    <img src="study1.jpg" class="img-fluid">
                 </div>
             </div>
         </div>

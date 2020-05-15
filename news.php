@@ -14,7 +14,7 @@ include('db_connection.php')
                     </h3>                    
                 </div>
                 <div class="col-lg-6">
-                    <img src="images/study1.jpg" class="img-fluid">
+                    <img src="study1.jpg" class="img-fluid">
                 </div>
             </div>
         </div>

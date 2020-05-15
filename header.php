@@ -16,7 +16,7 @@ session_start();
     <body>
     	<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
     		<div class="container-fluid">
-    			<a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="Logo of our page"></a>
+    			<a class="navbar-brand" href="index.php"><img src="logo.png" alt="Logo of our page"></a>
     			<button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarResponsive">
     				<span class="navbar-toggler-icon"></span>
     			</button>

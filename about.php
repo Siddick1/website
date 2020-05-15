@@ -7,7 +7,7 @@ include('header.php');
 <div class="container-fluid padding">
             <div class="row padding" style=" margin:50px 100px 150px 50px;">
             	<div class="col-lg-6">
-                    <img src="images/logo.png" class="img-fluid" style="width: 200px; height: 200px;">
+                    <img src="logo.png" class="img-fluid" style="width: 200px; height: 200px;">
                 </div>
                 <div class="col-lg-6">
                     <h3>

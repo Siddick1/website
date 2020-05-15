@@ -3,24 +3,7 @@ $page='news';
 date_default_timezone_set('Africa/Kigali');
 include('header.php');
 include('db_connection.php')
-$sql="SELECT * FROM comments";
-$result=$con->query($sql);
-while($row=$result->fetch_assoc()){
-    echo "<div class='comments'>";
-        echo "Posted by: ".$row['user']."<br>";
-        echo $row['comment_date']."<br>";
-        echo nl2br($row['message'])."<br>";
-    echo "</div>";}
-    echo "<form class='comment_area' method='POST' action='validations.php'>
-        <input type='hidden' name='comment_date' value='".date('Y-m-d H:i:s')."'>
-        <label for='commentForm'>Write your comments, thoughts, questions bellow here</label>
-        <textarea name='message' class='form-control' id='commentForm' rows='3' required></textarea>
-        <br>
-        <button type='submit' name='submit_comment'>Comment</button>
-    </form>";
-    ?>
-    <br>
-
+?>
 <div class="container-fluid padding">
             <div class="row padding">
                 <div class="col-lg-6">
@@ -42,6 +25,23 @@ while($row=$result->fetch_assoc()){
                 </div>
             </div>
         </div>
+        <?php
+        $sql="SELECT * FROM comments";
+        $result=$con->query($sql);
+        while($row=$result->fetch_assoc()){
+            echo "<div class='comments'>";
+                echo "Posted by: ".$row['user']."<br>";
+                echo $row['comment_date']."<br>";
+                echo nl2br($row['message'])."<br>";
+            echo "</div>";}
+        echo "<form class='comment_area' method='POST' action='validations.php'>
+            <input type='hidden' name='comment_date' value='".date('Y-m-d H:i:s')."'>
+            <label for='commentForm'>Write your comments, thoughts, questions bellow here</label>
+            <textarea name='message' class='form-control' id='commentForm' rows='3' required></textarea>
+            <br>
+            <button type='submit' name='submit_comment'>Comment</button>
+        </form>";
+        ?>
     </body>
 	<?php
 		include('footer.php');
